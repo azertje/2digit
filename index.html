@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2digit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2cdd4aab88.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img class="logo" src="images/ci_black.png" alt="2digit logo">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">AI</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="sec1">
+            <div class="sec1-container p20">
+                <div class="sec1-text-container">
+                    <p>샐러드보다 더 신선한
+                        <br>주식 정보가 매일 매일 새롭게!</p>
+                    <p>국내 최초 인공지능 기반 뉴스 분석 주식투자정보서비스</p>
+                    <img src="images/Asset_5.png" alt="">
+                </div>
+                <div class="buttons-container">
+                    <a href="#"><img src="images/button_googleplay.png" alt="Get on Google Play"></a>
+                    <a href="#"><img id="appst" src="images/button_appstore.png" alt="Get on App Store"></a>
+                </div>
+            </div>
+        </section>
+        <section class="sec2">
+            <div class="sec2-container p20">
+                <div class="sec2-text-container">
+                    <div class="sec2-title">
+                        <img src="images/leaf_big1.png" alt="leaf">
+                        <p>건강한 주식을 위한 특별 레시피</p>
+                    </div>
+                    <div class="hero">
+                        <div class="btn-box">
+                            <button id="btn1" onclick="openFirst()">뉴스</button>
+                            <button id="btn2" onclick="openSecond()">지표와 차트</button>
+                            <button id="btn3" onclick="openThird()">이벤트</button>
+                        </div>
+                        <div class="content" id="content1">
+                            <div class="content-left">
+                                <h1 class="tab-title">
+                                    남들 다 아는 뉴스,
+                                    <br>나만 아는 정보
+                                </h1>
+                                <p class="tab-text">
+                                    호재 같은 악재 뉴스? 악재 같은 호재 뉴스?<br>
+                                    국내 최초의 인공지능 기반 뉴스 분석 주식정보 서비스로<br>
+                                    진실을 확인하세요!
+                                </p>
+                            </div>
+                            <div class="content-right">
+                                <img src="images/screen_1-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content" id="content2">
+                            <div class="content-left">
+                                <h1 class="tab-title">
+                                    인공지능을 통한<br>
+                                    실시간 종합 분석
+                                </h1>
+                                <p class="tab-text">
+                                    요리조리 비교하고 12가지 지표로 분석하며 평가하는 <br>
+                                    스마트 분석으로 어려운 차트 보기 해결하세요!
+                                </p>
+                            </div>
+                            <div class="content-right">
+                                <img src="images/screen_1-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content" id="content3">
+                            <div class="content-left">
+                                <h1 class="tab-title">
+                                    시장과 종목의<br>
+                                    이벤트를 한 눈에
+                                </h1>
+                                <p class="tab-text">
+                                    주주총회를 하는 종목은 뭘까? <br>
+                                    주주총회하면 주가는 오를까? 내릴까? <br>
+                                    이벤트 알림 받고 투자 시점 꽉 잡으세요! 
+                                </p>
+                            </div>
+                            <div class="content-right">
+                                <img src="images/screen_1-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </section>
+        <section class="sec3">
+            <div class="sec2-container p20">
+                <div class="sec2-text-container">
+                    <div class="sec2-title">
+                        <img src="images/leaf_big1.png" alt="leaf">
+                        <p>내 종목에 진가를 더하다</p>
+                    </div>
+                    <div class="hero">
+                        <div class="btn-box">
+                            <button id="p2-btn1" onclick="openFirstP2()">가치 예측</button>
+                            <button id="p2-btn2" onclick="openSecondP2()">SNS 분석</button>
+                            <button id="p2-btn3" onclick="openThirdP2()">스마트 맞춤 검색</button>
+                        </div>
+                        <div class="content" id="p2-content1">
+                            <div class="content-left">
+                                <h1 class="tab-title">
+                                    고평가? 저평가?<br>
+                                    내 종목 가치에 대한 전망은?
+                                </h1>
+                                <p class="tab-text">
+                                    내 종목의 미래는?<br>
+                                    FICS 산업 분류로 비교, 평가된<br>
+                                    보유 종목의 가치를 한 눈에 확인하세요.
+                                </p>
+                            </div>
+                            <div class="content-right">
+                                <img src="images/screen_2-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content" id="p2-content2">
+                            <div class="content-left">
+                                <h1 class="tab-title">
+                                    이 방 저 방 이제 그만!<br>
+                                    주주들의 의견을 모아모아
+                                </h1>
+                                <p class="tab-text">
+                                    종목 토론방 게시물을 인공지능이<br>
+                                    실시간 모니터링을 통해 감성 분석을 수행하여 <br>
+                                    상장 종목에 대한 의견이 긍정적인지 부정적인지를 판별합니다.
+                                </p>
+                            </div>
+                            <div class="content-right">
+                                <img src="images/screen_2-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content" id="p2-content3">
+                            <div class="content-left">
+                                <h1 class="tab-title">
+                                    급등주, 테마주 등 원하는 종목을<br>
+                                    찾아주는 스마트 맞춤 검색
+                                </h1>
+                                <p class="tab-text">
+                                    HOT한 주식만 골라서 쏙쏙!<br>
+                                    매일 업데이트 되는 테마주, 급등주를 하나도 놓치지 않는<br>
+                                    세분화된 검색 기능을 제공합니다
+                                </p>
+                            </div>
+                            <div class="content-right">
+                                <img src="images/screen_2-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </section>
+        <section class="sec4">
+            <div class="sec4-content">
+                <h2>Welcome to NEWS SALAD’s world</h2>
+                <div class="sec4-socials-container">
+                    <div class="socials-item">
+                        <div class="socials-img">
+                            <a href="#"><img src="images/Asset_3.png" alt="Instagram"></a>
+                        </div>
+                        <div class="socials-text">
+                            <p>인스타그램</p>
+                        </div>
+                    </div>
+                    <div class="socials-item">
+                        <div class="socials-img">
+                            <a href="#"><img src="images/Asset_4.png" alt="Facebook"></a>
+                        </div>
+                        <div class="socials-text">
+                            <p>페이스북</p>
+                        </div>
+                    </div>
+                    <div class="socials-item">
+                        <div class="socials-img">
+                            <a href="#"><img src="images/Asset_2.png" alt="Naver Post"></a>
+                        </div>
+                        <div class="socials-text">
+                            <p>네이버포스트</p>
+                        </div>
+                    </div>
+                    <div class="socials-item">
+                        <div class="socials-img">
+                            <a href="#"><img src="images/Asset_6.png" alt="Medium"></a>
+                        </div>
+                        <div class="socials-text">
+                            <p>미디엄</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec5">
+            <div class="sec5-container">
+                <div class="sec5-logo">
+                    <img src="images/ci_black.png" alt="2digit logo">
+                </div>
+                <div class="sec5-text">
+                    <h2>국내 No.1 금융 인공지능 핀테크사</h2>
+                    <p>
+                        투디지트는 누구나 쉽고 효과적으로 금융을 누릴 수 있도록<br>
+                        금융 전문 인공지능을 만듭니다.
+                    </p>
+                    <a href="#">See more 2digit’s AI >></a>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="wrapper">
+            <div class="footer-container">
+                <div class="footer-text">
+                    <p>
+                        <span class="first-span">(주)투디지트</span>|<span>대표 박석준</span>|<span>757-86-01206</span><br>
+                        <span class="first-span">경기도 성남시 분당구 판교로 255번길 35, A동 801</span>|<span>031-8038-4877</span>|<span>contact@2digit.io</span></p>
+                </div>
+                <div class="footer-icons">
+                    <div class="footer-icon"><a href="#"><img src="images/footer_icon_1_fb.png" alt="Facebook"></a></div>
+                    <div class="footer-icon"><a href="#"><img src="images/footer_icon_2_insta.png" alt="Instagram"></a></div>
+                    <div class="footer-icon"><a href="#"><img src="images/footer_icon_3_medium.png" alt="Medium"></a></div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>
+                    Copyright©2020 2Digit. All Rights Reserved<br>
+                    <strong>이용약관 및 개인정보보호처리방침</strong>
+                </p>
+            </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
