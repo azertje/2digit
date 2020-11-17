@@ -408,12 +408,12 @@ span {
         position: unset;
         padding-top: 20px;
     }
-    .sec2-title p {
+    /* .sec2-title p {
         font-size: 17px;
-    }
-    .sec2-title img {
+    } */
+    /* .sec2-title img {
         height: 17px;
-    }
+    } */
     .content {
         display: flex;
         flex-direction: column;
@@ -533,9 +533,9 @@ span {
         padding-top: 20px;
         margin-bottom: 10px;
     }
-    .sec2-title p {
+    /* .sec2-title p {
         font-size: 20px;
-    }
+    } */
     .content {
         display: flex;
         flex-direction: column;
@@ -661,9 +661,9 @@ span {
     .sec2-title {
         top: 100px;
     }
-    .sec2-title p {
+    /* .sec2-title p {
         font-size: 20px;
-    }
+    } */
     .btn-box {
         top: 150px;
     }
