@@ -9,9 +9,13 @@ html, body {
     width: 100%;
     height: 100%;
 }
+html {
+    font-size: 16px;
+}
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1em;
 }
 
 nav {
@@ -83,13 +87,13 @@ main {
 }
 
 .sec1-text-container p:nth-child(1) {
-    font-size: 2.500vw;
+    font-size: 3rem;
     color: black;
     font-weight: 400;
     margin-bottom: 50px;
 }
 .sec1-text-container p:nth-child(2) {
-    font-size: 1.667vw;
+    font-size: 2rem;
     color: #64A21A;
     font-weight: 400;
     margin-bottom: 20px;
@@ -117,19 +121,19 @@ main {
     width: 100%;
     height: 100vh;
 }
-.sec2-text-container p:not(.tab-title, .tab-text) {
-    font-size: 1.354vw;
+/* .sec2-text-container p:not(.tab-title, .tab-text) {
+    font-size: 1.625rem;
     font-weight: 500;
     color: #8BBC51;
-}
+} */
 .tab-title {
-    font-size: 2.604vw;
+    font-size: 3.125rem;
     font-weight: 700;
     color: black;
     margin-bottom: 20px;
 }
 .tab-text {
-    font-size: 1.250vw;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #717171;
 }
@@ -145,7 +149,7 @@ main {
     align-self: center;
 }
 .sec2-title p {
-    font-size: 1.354vw;
+    font-size: 1.625rem;
     font-weight: 400;
     color: #8BBC51;
 }
@@ -169,15 +173,16 @@ main {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 50px;
-    font-size: 1.146vw;
+    padding: 14px 0;
+    flex-basis: 33.3%;
+    font-size: 1.375rem;
     font-weight: 500;
     color: #9F9F9F;
     border-bottom: thick solid #E5E5E5;
 }
-#p2-btn1, #p2-btn2, #p2-btn3 {
+/* #p2-btn1, #p2-btn2, #p2-btn3 {
     padding: 14px 30px;
-}
+} */
 .content {
     display: flex;
     width: 100%;
@@ -238,7 +243,7 @@ main {
     align-items: center;
 }
 .sec4-content h2 {
-    font-size: 2.604vw;
+    font-size: 3.125rem;
     font-weight: bold;
     color: white;
     text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
@@ -259,7 +264,7 @@ main {
     align-items: center;
 }
 .socials-text {
-    font-size: 1.250vw;
+    font-size: 1.5rem;
     font-weight: 400;
     color: white;
 }
@@ -284,18 +289,18 @@ main {
     flex-basis: 50%;
 }
 .sec5-text h2 {
-    font-size: 2.604vw;
+    font-size: 3.125rem;
     font-weight: 400;
     margin-bottom: 40px;
 }
 .sec5-text p {
-    font-size: 1.354vw;
+    font-size: 1.625rem;
     font-weight: 400;
     color: #717171;
     margin-bottom: 55px;
 }
 .sec5-text a {
-    font-size: 1.042vw;
+    font-size: 1.25rem;
     font-weight: 400;
     color: white;
     background: linear-gradient(to right, #C4E82E,#99CC34);
@@ -314,7 +319,7 @@ main {
     background: black;
     color: white;
     position: relative;
-    font-size: 0.938vw;
+    font-size: 1.125rem;
     font-weight: 300;
 }
 .wrapper {
@@ -405,6 +410,9 @@ span {
     }
     .sec2-title p {
         font-size: 17px;
+    }
+    .sec2-title img {
+        height: 17px;
     }
     .content {
         display: flex;
