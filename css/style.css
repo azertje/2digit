@@ -385,6 +385,9 @@ span {
         background-size: 90%;
         background-position: top -100px right;
     }
+    .sec1-text-container img {
+        margin-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -394,10 +397,9 @@ span {
     .sec1-text-container p:nth-child(2) {
         font-size: 1.065rem !important;
     }
-
     .sec1-text-container img {
         height: 60px;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
     .buttons-container {
         margin-bottom: 10%;
