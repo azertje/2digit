@@ -613,7 +613,11 @@ span {
     }
     .sec1-text-container img {
         height: 55px;
+        margin-bottom: 20px;
     } 
+    .buttons-container {
+        margin-bottom: 5%;
+    }
     .buttons-container img {
         height: 50px;
     }
