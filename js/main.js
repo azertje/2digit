@@ -20,7 +20,7 @@ const content2 = [
     {
         title: '고평가? 저평가?<br>내 종목 가치에 대한 전망은?',
         text: '내 종목의 미래는?<br>FICS 산업 분류로 비교, 평가된<br>보유 종목의 가치를 한 눈에 확인하세요.',
-        image: 'images/2-1_sample.gif'
+        image: 'images/2-1.gif'
     },
     {
         title: '이 방 저 방 이제 그만!<br>주주들의 의견을 모아모아',
