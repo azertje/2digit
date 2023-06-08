@@ -14,16 +14,21 @@ html {
 }
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'NanumSquare', 'Noto Sans KR', sans-serif;
     font-size: 1em;
 }
 
 nav {
     background: transparent;
     height: 80px;
-    width: 80%;
-    margin: 0 auto;
+    position: absolute;
+    max-width: 1400px;
+    padding: 0 80px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
+
 .logo {
     height: 60px;
     margin-top: 10px;
@@ -31,6 +36,7 @@ nav {
 nav ul {
     float: right;
     margin-right: 20px;
+    display: none;
 }
 nav ul li {
     display: inline-block;
@@ -39,7 +45,7 @@ nav ul li {
 }
 nav ul li a {
     color: white;
-    font-size: 16px;
+    font-size: 12px;
 }
 nav ul li a:hover {
     color: white;
@@ -75,36 +81,39 @@ main {
     /* background-size: cover; */
     background-position: top right;
     background-size: 80%;
-    margin-top: -80px;
 }
 .sec1-container {
     /* padding-top: 15%; */
     height: 100vh;
-    width: 100vw;
+    max-width: 1400px;
+    padding: 0 80px;
+    box-sizing: border-box;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+
 .sec1-text-container p:nth-child(1) {
-    font-size: 3rem;
+    font-size: 32px;
     color: black;
     font-weight: 400;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
-.sec1-text-container p:nth-child(2) {
-    font-size: 2rem;
-    color: #64A21A;
+.sec1-text-container p:nth-child(3) {
+    font-size: 24px;
+    color: #717171;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 .sec1-text-container img {
-    margin-bottom: 150px;
-    height: 80px;
+    margin-bottom: 20px;
+    height: 60px;
 }
 
 .buttons-container img {
-    height: 70px;
+    height: 50px;
     margin-right: 20px;
 }
 
@@ -112,14 +121,18 @@ main {
 .sec2 {
     height: 100vh;
     width: 100%;
-    background-image: url('../images/bg_1.png');
+    background-image: url('../images/test_bg_1.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
 }
 .sec2-container {
-    width: 100%;
     height: 100vh;
+    max-width: 1400px;
+    padding: 0 80px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
 }
 /* .sec2-text-container p:not(.tab-title, .tab-text) {
     font-size: 1.625rem;
@@ -127,69 +140,72 @@ main {
     color: #8BBC51;
 } */
 .tab-title {
-    font-size: 3.125rem;
+    /* font-size: 3.125rem; */
+    font-size: 45px;
     font-weight: 700;
     color: black;
     margin-bottom: 20px;
 }
 .tab-text {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: 24px;
     font-weight: 400;
     color: #717171;
 }
 /*tabs*/
 .sec2-title {
     display: flex;
-    /* padding-top: 200px; */
     position: relative;
-    top: 250px;
+    margin-bottom: 80px;
 }
 .sec2-title img {
     height: 26px;
     align-self: center;
 }
 .sec2-title p {
-    font-size: 1.625rem;
+    /* font-size: 1.625rem; */
+    font-size: 26px;
     font-weight: 400;
     color: #8BBC51;
 }
 
 .hero {
     width: 100%;
-    height: 100vh;
-    position: absolute;
-    margin: 100px auto;
     overflow: hidden;
 }
 .btn-box {
     display: flex;
-    width: 600px;
     position: relative;
-    top: 190px;
     z-index: 30;
+    margin-bottom: 50px;
+    padding-right: 50px;
 }
 .btn-box button {
     background: transparent;
     border: none;
     outline: none;
     cursor: pointer;
+    /* width: 200px; */
+    width: 200px;
+    box-sizing: border-box;
     padding: 14px 0;
-    flex-basis: 33.3%;
-    font-size: 1.375rem;
+    /* font-size: 1.375rem; */
+    font-size: 22px;
     font-weight: 500;
     color: #9F9F9F;
     border-bottom: thick solid #E5E5E5;
+
 }
-/* #p2-btn1, #p2-btn2, #p2-btn3 {
-    padding: 14px 30px;
-} */
+
+.btn-box button.active {
+    border-color: #64A21A;
+}
+
 .content {
     display: flex;
     width: 100%;
     justify-content: space-between;
     position: relative;
-    top: -100px;
-    transform: translateX(200%);
 }
 .sec2-text-container {
     position: relative;
@@ -200,7 +216,6 @@ main {
     height: auto;
 }
 .content-left {
-    flex-basis: 50%;
     align-self: center;
 }
 .content-right {
@@ -218,10 +233,11 @@ main {
 
 /* sec3 */
 .sec3 {
-    height: 100vh;
+    height: auto;
     width: 100%;
-    background-image: url('../images/bg_2.png');
+    background-image: url('../images/test-bg_2.png');
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: top right;
 }
 
@@ -243,7 +259,8 @@ main {
     align-items: center;
 }
 .sec4-content h2 {
-    font-size: 3.125rem;
+    /* font-size: 3.125rem; */
+    font-size: 50px;
     font-weight: bold;
     color: white;
     text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
@@ -264,7 +281,8 @@ main {
     align-items: center;
 }
 .socials-text {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: 20px;
     font-weight: 400;
     color: white;
 }
@@ -289,12 +307,14 @@ main {
     flex-basis: 50%;
 }
 .sec5-text h2 {
-    font-size: 3.125rem;
+    /* font-size: 3.125rem; */
+    font-size: 45px;
     font-weight: 400;
     margin-bottom: 40px;
 }
 .sec5-text p {
-    font-size: 1.625rem;
+    /* font-size: 1.625rem; */
+    font-size: 24px;
     font-weight: 400;
     color: #717171;
     margin-bottom: 55px;
@@ -313,25 +333,33 @@ main {
 
 /* footer */
 .footer {
-    height: 28vh;
+    height: 280px;
     width: 100%;
-    padding: 0 20%;
-    background: black;
-    color: white;
+    box-sizing: border-box;
+    color: #292929;
+    background: #EEEEEE;
     position: relative;
-    font-size: 1.125rem;
     font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
-.wrapper {
-    position: absolute;
-    width: 60%;
-    top: 50%;
-    transform: translateY(-50%);
+.footer a {
+    color: #292929;
+    font-weight: bold;
 }
+/*.wrapper {*/
+    /*position: absolute;*/
+    /*width: 60%;*/
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+/*}*/
 .footer-container {
     display: flex;
+    max-width: 1024px;
     justify-content: space-between;
     align-items: center;
+    padding-top: 70px;
 }
 .footer-icons {
     display: flex;
@@ -352,547 +380,312 @@ span {
     margin-top: 20px;
 }
 
-
-
-/* ! Media queries */
-/*burger menu*/
-@media (max-width: 1200px) {
-    .checkbtn {
-        display: block;
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .sec1 {
+        background-image: url('../images/bg_main.png');
+        background-size: 90%;
+        background-position: top -100px right;
     }
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: lightblue;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
+    .sec1-text-container p:nth-child(3) {
+        margin-bottom: 50px;
     }
-    nav ul li {
-        display: block;
+    .sec2 {
+        background-position: top 200px right;
     }
-    nav ul li a {
-        font-size: 1.042vw;
-    }
-    #check:checked ~ ul {
-        left: 0;
+    .sec3 {
+        background-position: top -200px right;
     }
 }
-@media (max-width: 414px) {
-    .sec1 {
-        background-size: 250%;
-        background-position: 85% -10%;
+
+@media screen and (max-width: 1024px) {
+    .sec1-text-container p {
+        font-size: 1.4375rem !important;
     }
-    .buttons-container img {
-        height: 40px;
-    }
-    .sec1-text-container p:nth-child(1) {
-        font-size: 22px;
-        margin-bottom: 20px;
-    }
-    .sec1-text-container p:nth-child(2) {
-        font-size: 14px;
-        margin-bottom: 10px;
+    .sec1-text-container p:nth-child(3) {
+        font-size: 1.065rem !important;
+        margin-bottom: 50px;
     }
     .sec1-text-container img {
-        height: 50px;
-        margin-bottom: 20px;
+        height: 60px;
     }
-    .sec1-text-container {
-        margin-top: 300px;
+    .buttons-container {
+        margin-bottom: 10%;
+    }
+    .buttons-container img {
+        height: 50px;
+        margin-right: 10px;
     }
 
-    .sec2-title {
-        position: unset;
-        padding-top: 20px;
+    .sec1 {
+        background-image: url('../images/bg_main_tablet_vertical.png');
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 100%;
     }
-    /* .sec2-title p {
-        font-size: 17px;
-    } */
-    /* .sec2-title img {
-        height: 17px;
-    } */
-    .content {
-        display: flex;
-        flex-direction: column;
+    .sec1-container {
+        justify-content: flex-end;
     }
-    .tab-title {
-        font-size: 27px;
+
+    .sec5-text h2 {
+        font-size: 28px;
     }
-    .tab-text {
-        font-size: 13px;
+
+    .sec5-text p {
+        font-size: 12px;
     }
-    .hero, .btn-box, .content {
-        position: unset;
+
+    .sec5-text a {
+        font-size: 12px;
     }
-    .hero {
-        margin: auto;
+
+    .sec5, .sec5-container {
+        height: 360px;
     }
-    .btn-box button {
-        font-size: 10px;
-        padding: 14px 30px;
+
+    .footer-container {
+        max-width: 800px;
+        font-size: 16px;
     }
-    .content-left {
-        align-self: unset;
+
+    .socials-img img {
+        max-height: 57px;
     }
-    #content1, #p2-content1 {
-        margin-top: 10px;
+
+    .sec4-content h2 {
+        font-size: 28px;
     }
-    #content3, #p2-content3 {
-        margin-top: 30px;
+
+    .socials-text {
+        font-size: 14px;
     }
 
     .sec4 {
-        height: 30vh;
-        background-size: cover;
-    }
-    .sec4-content h2 {
-        font-size: 18px;
-    }
-    .socials-item {
-        margin: 0 10px;
-    }
-    .socials-img img {
-        max-height: 40px;
-    }
-    .socials-text {
-        font-size: 10px;
+        background-size: 115%;
+        background-position: bottom center;
+        height: 360px;
     }
 
-    .sec5 {
-        height: 45vh;
-    }
-    .sec5-container {
-        flex-direction: column;
-        height: 40vh;
-    }
-    .sec5-logo, .sec5-text {
-        flex-basis: unset;
-    }
-    .sec5-logo img {
-        width: 200px;
-    }
-    .sec5-text h2 {
-        font-size: 19px;
-        margin-bottom: 20px;
-    }
-    .sec5-text p {
-        font-size: 11px;
-        margin-bottom: 25px;
-    }
-    .sec5-text a {
-        font-size: 11px;
-    }
-
-    .footer {
-        font-size: 14px;
-    }
-    .footer-container {
-        flex-direction: column;
-    }
-    .footer-icon {
-        margin: 10px 20px 0 0;
-    }
-    .footer-copyright {
-        margin-top: 10px;
-    }
-}
-
-@media (min-width: 415px) and (max-width: 768px) {
-    .sec1 {
-        background-size: 150%;
-        background-position: 90% 0%;
-    }
-    .buttons-container img {
-        height: 40px;
-    }
-    .sec1-text-container p:nth-child(1) {
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-    .sec1-text-container p:nth-child(2) {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    .sec1-text-container img {
-        height: 65px;
-        margin-bottom: 20px;
-    }
-    .sec1-text-container {
-        margin-top: 300px;
-    }
-    .buttons-container img {
-        height: 60px;
-        margin-top: 10px;
-    }
-
-    .sec2-title {
-        position: unset;
-        padding-top: 20px;
-        margin-bottom: 10px;
-    }
-    /* .sec2-title p {
-        font-size: 20px;
-    } */
-    .content {
-        display: flex;
-        flex-direction: column;
-    }
     .tab-title {
         font-size: 35px;
     }
-    .tab-text {
-        font-size: 15px;
-    }
-    .hero, .btn-box, .content {
-        position: unset;
-    }
-    .hero {
-        margin: auto;
-    }
-    .btn-box {
-        margin: 0 auto;
-        width: 500px;
-    }
-    .btn-box button {
-        font-size: 16px;
-        padding: 14px 55px;
-    }
-    .content-left {
-        align-self: unset;
-        margin-left: 50px;
-    }
-    #content1, #p2-content1 {
-        margin-top: 10px;
-    }
-    #content3, #p2-content3 {
-        margin-top: 15px;
-    }
-    .content-right {
-        text-align: center;
-        width: 100%;
-        max-width: 100%;
-    }
-    .content-right img {
-        width: auto;
-        height: 650px;
-        text-align: center;
+
+    .sec2-title p {
+        font-size: 18px;
     }
 
+    .sec2-title img {
+        height: 18px;
+        margin-right: 5px;
+    }
+
+    .btn-box button {
+        width: 147px;
+        font-size: 15px;
+    }
+
+    .tab-text {
+        font-size: 17px;
+    }
+
+    .content-right {
+        width: 350px;
+    }
+
+    .sec2-container {
+        height: 750px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec1, .sec2 {
+        height: auto;
+    }
+
+
+    nav {
+        background: transparent;
+        height: 80px;
+        position: absolute;
+        max-width: 1200px;
+        padding: 0 80px;
+        box-sizing: border-box;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        display: none;
+    }
+    .sec1-text-container p:nth-child(1) {
+        margin-bottom: 25px;
+    }
+    .sec1-text-container p:nth-child(3) {
+        margin-bottom: 40px;
+    }
+    .sec2, .sec3 {
+        height: 100vh;
+    }
+    .sec2-title {
+        margin-bottom: 50px;
+    }
+    .sec2-text-container {
+        margin-top: 300px;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
     .sec4 {
-        height: 30vh;
         background-size: cover;
     }
+    .sec5, .sec5-container {
+        height: 500px;
+    }
+    .sec5-container {
+        flex-direction: column;
+    }
+    .sec5-logo img {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .footer {
+        padding: 0 20%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .sec1 {
+        background-image: url('../images/bg_main_mobile_vertical-wide.png');
+        background-position: top -50px right;
+    }
+    .sec1-container, .sec2-container {
+        /* padding: 0 20px; */
+        padding: 0;
+    }
+    .sec1-container {
+        padding: 0 20px;
+    }
+    .sec2-title {
+        margin-bottom: 20px;
+    }
+    .sec2, .sec3 {
+        height: 125vh;
+    }
+    .content-left {
+        margin-left: 10px;
+        align-self: flex-start;
+    }
+
     .sec4-content h2 {
-        font-size: 25px;
+        text-align: center;
     }
     .socials-item {
         margin: 0 20px;
     }
-    .socials-img img {
-        max-height: 55px;
+    .footer {
+        height: 350px;
     }
-    .socials-text {
-        font-size: 16px;
-    }
-
-    .sec5 {
-        height: 45vh;
-    }
-    .sec5-container {
+    .footer-container {
         flex-direction: column;
-        height: 40vh;
+        align-items: flex-start;
     }
-    .sec5-logo, .sec5-text {
-        flex-basis: unset;
+    .footer-icons {
+        margin-top: 25px;
     }
-    .sec5-logo img {
-        width: 260px;
-    }
-    .sec5-text h2 {
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-    .sec5-text p {
-        font-size: 16px;
-        margin-bottom: 45px;
-    }
-    .sec5-text a {
-        font-size: 16px;
-    }
-
-    .footer {
-        font-size: 16px;
-        padding: 0 10%;
-    }
-    .wrapper {
-        width: 80%;
-    }
-    .footer-container {
-        flex-direction: row;
-        margin-bottom: 40px;
-    }
-    .footer-icon {
-        margin: 10px 10px 0 0;
-    }
-    .footer-copyright {
-        margin-top: 10px;
+    .footer-icon:first-child {
+        margin-left: 0;
     }
 }
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .sec1 {
-        background-size: 130%;
-        background-position: 55% -30%;
-    }
-    .sec1-text-container p:nth-child(1) {
-        margin-bottom: 30px;
-    }
-    .sec1-text-container img {
-        height: 60px;
-        margin-bottom: 80px;
-    }
-    .buttons-container img {
-        height: 50px;
-    }
-
-    .sec2-title {
-        top: 100px;
-    }
-    /* .sec2-title p {
-        font-size: 20px;
-    } */
-    .btn-box {
-        top: 150px;
-    }
-    .hero {
-        margin: 0;
-    }
-    .content-right {
-        margin-top: 50px;
-    }
-    .content-right img {
-        width: auto;
-        height: 650px;
-    }
-
-    .sec4-content h2 {
-        font-size: 28px;
-    }
-    .socials-img img {
-        max-height: 55px;
-    }
-    .socials-item {
-        margin: 0 15px;
-    }
-
-    .sec5-logo img {
-        width: 260px;
-    }
-
-    .footer {
-        font-size: 16px;
-        padding: 0 10%;
-    }
-    .wrapper {
-        width: 80%;
-    }
-    .footer-container {
-        flex-direction: row;
-        margin-bottom: 40px;
-    }
-    .footer-icon {
-        margin: 10px 10px 0 0;
-    }
-    .footer-copyright {
-        margin-top: 10px;
-    }
-}
-
-/* @media (max-width: 375px) {
-    .sec1 {
-        background-size: 250%;
-        background-position: 85% -10%;
-    }
-    .buttons-container img {
-        height: 40px;
-    }
+@media screen and (max-width: 414px) {
     .sec1-text-container p:nth-child(1) {
         font-size: 22px;
-        margin-bottom: 20px;
     }
-    .sec1-text-container p:nth-child(2) {
-        font-size: 14px;
-        margin-bottom: 10px;
+    .sec1-text-container p:nth-child(3) {
+        font-size: 16px;
+        margin-bottom: 20px;
     }
     .sec1-text-container img {
+        height: 55px;
+    } 
+    .buttons-container {
+        margin-bottom: 5%;
+    }
+    .buttons-container img {
         height: 50px;
-        margin-bottom: 20px;
     }
-    .sec1-text-container {
-        margin-top: 300px;
-    }
-
-    .sec2-title {
-        position: unset;
-        padding-top: 20px;
+    .btn-box button {
+        width: 115px;
+        font-size: 14px;
     }
     .sec2-title p {
-        font-size: 17px;
-    }
-    .content {
-        display: flex;
-        flex-direction: column;
+        font-size: 18px;
     }
     .tab-title {
         font-size: 27px;
     }
     .tab-text {
-        font-size: 13px;
+        font-size: 16px;
     }
-    .hero, .btn-box, .content {
-        position: unset;
-    }
-    .hero {
-        margin: auto;
-    }
-    .btn-box button {
-        font-size: 10px;
-        padding: 14px 30px;
-    }
-    .content-left {
-        align-self: unset;
-    }
-    #content1, #p2-content1 {
-        margin-top: 10px;
-    }
-    #content3, #p2-content3 {
-        margin-top: 30px;
-    }
-
-    .sec4 {
-        height: 30vh;
-        background-size: cover;
+    .sec3 {
+        background-position: top -300px right;
     }
     .sec4-content h2 {
-        font-size: 18px;
+        font-size: 21px;
     }
     .socials-item {
         margin: 0 10px;
     }
-    .socials-img img {
-        max-height: 40px;
-    }
     .socials-text {
-        font-size: 10px;
+        font-size: 12px;
     }
-
-    .sec5 {
-        height: 45vh;
-    }
-    .sec5-container {
-        flex-direction: column;
-        height: 40vh;
-    }
-    .sec5-logo, .sec5-text {
-        flex-basis: unset;
-    }
-    .sec5-logo img {
-        width: 200px;
+    .sec5-text {
+        margin: 0 50px;
     }
     .sec5-text h2 {
-        font-size: 19px;
-        margin-bottom: 20px;
+        font-size: 21px;
     }
     .sec5-text p {
-        font-size: 11px;
-        margin-bottom: 25px;
-    }
-    .sec5-text a {
-        font-size: 11px;
-    }
-
-    .footer {
-        font-size: 14px;
+        font-size: 16px;
     }
     .footer-container {
-        flex-direction: column;
+        font-size: 14px;
     }
-    .footer-icon {
-        margin: 10px 20px 0 0;
-    }
-    .footer-copyright {
-        margin-top: 10px;
-    }
-
-} */
-
-/* @media (max-width: 414px) {
+}
+@media screen and (max-width: 375px) {
     .sec1 {
-        background-size: 250%;
-        background-position: 85% -10%;
-    }
-    .buttons-container img {
-        height: 40px;
+        background-image: url('../images/bg_main_mobile_vertical-thin.png');
+        background-position: top -100px right;
     }
     .sec1-text-container p:nth-child(1) {
-        font-size: 24px;
-        margin-bottom: 20px;
+        font-size: 22px;
     }
-    .sec1-text-container p:nth-child(2) {
+    .sec1-text-container p:nth-child(3) {
         font-size: 16px;
-        margin-bottom: 10px;
     }
     .sec1-text-container img {
-        height: 60px;
-        margin-bottom: 20px;
+        height: 50px;
+    } 
+    .buttons-container img {
+        height: 45px;
     }
-    .sec1-text-container {
-        margin-top: 300px;
-    }
-
-    .sec2-title {
-        position: unset;
-        padding-top: 20px;
+    .btn-box button {
+        width: 115px;
+        font-size: 14px;
     }
     .sec2-title p {
         font-size: 17px;
     }
-    .content {
-        display: flex;
-        flex-direction: column;
-    }
     .tab-title {
-        font-size: 30px;
+        font-size: 25px;
     }
     .tab-text {
-        font-size: 14px;
-    }
-    .hero, .btn-box, .content {
-        position: unset;
-    }
-    .hero {
-        margin: auto;
-    }
-    .btn-box button {
-        font-size: 10px;
-        padding: 14px 30px;
-    }
-    .content-left {
-        align-self: unset;
-    }
-    #content1, #p2-content1 {
-        margin-top: 10px;
-    }
-    #content3, #p2-content3 {
-        margin-top: 30px;
-    }
-
-    .sec4 {
-        height: 30vh;
-        background-size: cover;
+        font-size: 15px;
     }
     .sec4-content h2 {
         font-size: 18px;
@@ -900,49 +693,19 @@ span {
     .socials-item {
         margin: 0 10px;
     }
-    .socials-img img {
-        max-height: 40px;
-    }
     .socials-text {
-        font-size: 10px;
+        font-size: 12px;
     }
-
-    .sec5 {
-        height: 45vh;
-    }
-    .sec5-container {
-        flex-direction: column;
-        height: 40vh;
-    }
-    .sec5-logo, .sec5-text {
-        flex-basis: unset;
-    }
-    .sec5-logo img {
-        width: 200px;
+    .sec5-text {
+        margin: 0 50px;
     }
     .sec5-text h2 {
         font-size: 19px;
-        margin-bottom: 20px;
     }
     .sec5-text p {
-        font-size: 11px;
-        margin-bottom: 25px;
-    }
-    .sec5-text a {
-        font-size: 11px;
-    }
-
-    .footer {
-        font-size: 14px;
+        font-size: 15px;
     }
     .footer-container {
-        flex-direction: column;
+        font-size: 14px;
     }
-    .footer-icon {
-        margin: 10px 20px 0 0;
-    }
-    .footer-copyright {
-        margin-top: 10px;
-    }
-
-} */
+}
